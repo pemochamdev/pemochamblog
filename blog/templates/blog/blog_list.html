@@ -1,0 +1,13 @@
+{% load static %}
+<h1> Liste des Blogs </h1>
+
+{% for blog in blogs  %}
+
+<p>{{blog.title}} </p>
+<p><img src="{{blog.image.url}}" alt="image" width="400px"> </p>
+
+
+<p>{{blog.description}} </p>
+<p>Date: {{blog.date_updated}} </p>
+
+{% endfor %}
